@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage"
+             BackgroundColor="Black">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20,0"
+            Spacing="440">
+            <Label x:Name="Mostrar" Text="0" FontSize="50" TextColor="FloralWhite" HorizontalOptions="End" />
+            <Grid RowSpacing="13" ColumnSpacing="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button Text="AC" Clicked="Limpiar_Clicked" BackgroundColor="Purple" TextColor="White" CornerRadius="40" Grid.Row="0" Grid.Column="0" />
+                <Button Text="( )" Clicked="Parentesis_Clicked" BackgroundColor="Plum" TextColor="White" CornerRadius="40" Grid.Row="0" Grid.Column="1" />
+                <Button Text="%" Clicked="Operador_Clicked" BackgroundColor="Plum" TextColor="White" CornerRadius="40" Grid.Row="0" Grid.Column="2" />
+                <Button Text="/" Clicked="Operador_Clicked" BackgroundColor="Plum"  TextColor="White" CornerRadius="40" Grid.Row="0" Grid.Column="3" />
+
+                <Button Text="7" Clicked="Num_Clicked" BackgroundColor="Grey" TextColor="White" CornerRadius="40" Grid.Row="1" Grid.Column="0" />
+                <Button Text="8" Clicked="Num_Clicked" BackgroundColor="Grey" TextColor="White" CornerRadius="40" Grid.Row="1" Grid.Column="1" />
+                <Button Text="9" Clicked="Num_Clicked" BackgroundColor="Grey" TextColor="White" CornerRadius="40" Grid.Row="1" Grid.Column="2" />
+                <Button Text="×" Clicked="Operador_Clicked" BackgroundColor="Plum" TextColor="White" CornerRadius="40" Grid.Row="1" Grid.Column="3" />
+                
+                <Button Text="4" Clicked="Num_Clicked" BackgroundColor="Grey" TextColor="White" CornerRadius="40" Grid.Row="2" Grid.Column="0" />
+                <Button Text="5" Clicked="Num_Clicked" BackgroundColor="Grey" TextColor="White" CornerRadius="40" Grid.Row="2" Grid.Column="1" />
+                <Button Text="6" Clicked="Num_Clicked" BackgroundColor="Grey" TextColor="White" CornerRadius="40" Grid.Row="2" Grid.Column="2" />
+                <Button Text="-" Clicked="Operador_Clicked" BackgroundColor="Plum" TextColor="White" CornerRadius="40" Grid.Row="2" Grid.Column="3" />
+
+                <Button Text="1" Clicked="Num_Clicked" BackgroundColor="Grey" TextColor="White" CornerRadius="40" Grid.Row="3" Grid.Column="0" />
+                <Button Text="2" Clicked="Num_Clicked" BackgroundColor="Grey" TextColor="White" CornerRadius="40" Grid.Row="3" Grid.Column="1" />
+                <Button Text="3" Clicked="Num_Clicked" BackgroundColor="Grey" TextColor="White" CornerRadius="40" Grid.Row="3" Grid.Column="2" />
+                <Button Text="+" Clicked="Operador_Clicked" BackgroundColor="Plum" TextColor="White" CornerRadius="40" Grid.Row="3" Grid.Column="3" />
+
+                <Button Text="0" Clicked="Num_Clicked" BackgroundColor="Grey" TextColor="White" CornerRadius="40" Grid.Row="4" Grid.Column="0" />
+                <Button Text="." Clicked="Punto_Clicked" BackgroundColor="Grey" TextColor="White" CornerRadius="40" Grid.Row="4" Grid.Column="1" />
+                <Button Text="⌫" Clicked="Borrar_Clicked" BackgroundColor="Grey" TextColor="White" CornerRadius="40" Grid.Row="4" Grid.Column="2" />
+                <Button Text="=" Clicked="Igual_Clicked" BackgroundColor="LightPink" TextColor="Black" CornerRadius="40" Grid.Row="4" Grid.Column="3" />
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
