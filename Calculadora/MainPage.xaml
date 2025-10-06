@@ -28,7 +28,7 @@
 
                 <Button Text="AC" Clicked="Limpiar_Clicked" BackgroundColor="Purple" TextColor="White" CornerRadius="40" Grid.Row="0" Grid.Column="0" />
                 <Button Text="( )" Clicked="Parentesis_Clicked" BackgroundColor="Plum" TextColor="White" CornerRadius="40" Grid.Row="0" Grid.Column="1" />
-                <Button Text="%" Clicked="Operador_Clicked" BackgroundColor="Plum" TextColor="White" CornerRadius="40" Grid.Row="0" Grid.Column="2" />
+                <Button Text="%" Clicked="Porcentaje_Clicked" BackgroundColor="Plum" TextColor="White" CornerRadius="40" Grid.Row="0" Grid.Column="2" />
                 <Button Text="/" Clicked="Operador_Clicked" BackgroundColor="Plum"  TextColor="White" CornerRadius="40" Grid.Row="0" Grid.Column="3" />
 
                 <Button Text="7" Clicked="Num_Clicked" BackgroundColor="Grey" TextColor="White" CornerRadius="40" Grid.Row="1" Grid.Column="0" />
